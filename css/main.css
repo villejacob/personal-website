@@ -1,0 +1,59 @@
+html {
+	background: #F2F2F2;
+}
+
+body {
+	margin: 0;
+	display: table;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.landing {
+	height: 100%;
+	display: table;
+}
+
+.logo {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#logo {
+	display: inline-block;
+	margin: auto;
+	width: 40%;
+}
+
+.about {
+	display: table;
+	height: 100%;
+	width: 100%;
+/*	Nadine Erdmann
+	Black Beach
+	https://creativecommons.org/licenses/by-nc-nd/2.0/*/
+	background: url("../img/black-beach.jpg") no-repeat;
+	background-size: cover;
+}
+
+.landed {
+	position:relative;
+	-webkit-animation-name: landed;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-name: landed;
+	animation_duration: 3s;
+	animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes landed {
+	from {left:-10%;opacity:0;}
+	to {left:0;opacity:1;}
+}
+
+@keyframes landed {
+	from {left:-10%;opacity:0;}
+	to {left:0;opacity:1;}
+}
