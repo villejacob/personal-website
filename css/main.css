@@ -1,140 +1,66 @@
-/*html {
+html, body {
+	margin: 0;
+	padding: 0;
+	display: block;
+	overflow-x: hidden;
+	overflow-y: auto; 
 	background: #F2F2F2;
 }
 
-body {
-	margin: 0;
-	display: table;
+/*.landing {
+	background: #F2F2F2;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}*/
+
+.landing {
+	position: relative;
+	z-index: 2;
+	height: 100vh;
+	width: 100vw;
+}
+
+.bg-holder {
 	position: absolute;
+	z-index: 1;
 	height: 100%;
 	width: 100%;
 }
 
-.landing {
-	height: 100%;
-	display: table;
-}
-
-.logo {
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
-}
-
-#logo {
-	display: inline-block;
-	margin: auto;
-	width: 40%;
+.logo-container {
+	position: relative;
+	z-index: 3;
+	height: 20vh;
+	width: 40vw;
+	min-width: 360px;
+	margin: 40vh auto;
+	background: url(../images/name-logo.png) center / contain no-repeat;
 }
 
 .about {
-	display: table;
-	height: 100%;
-	width: 100%;
-
-	*/
-	/*	
-	Nadine Erdmann
-	Black Beach
-	https://creativecommons.org/licenses/by-nc-nd/2.0/ 
-	*/
-	/*
-	background-image: url("../img/black-beach.jpg");
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	position: relative;
+	z-index: 2;
+	height: 100vh;
+	background: url(../images/black-beach.jpg) center top / cover no-repeat;
 }
 
-.landed {
-	position:relative;
-	-webkit-animation-name: landed;
-	-webkit-animation-duration: 3s;
-	-webkit-animation-timing-function: ease-in-out;
-	animation-name: landed;
-	animation_duration: 3s;
-	animation-timing-function: ease-in-out;
-}
-
-@-webkit-keyframes landed {
-	from {left:-10%;opacity:0;}
-	to {left:0;opacity:1;}
-}
-
-@keyframes landed {
-	from {left:-10%;opacity:0;}
-	to {left:0;opacity:1;}
-}
-*/
-
-div {
-  box-sizing: border-box;
-}
-
-.container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  perspective: 300px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
-.group {
-  height: 100%;
-  position: relative;
-  transform-style: preserve-3d;
-  font-size: 20px;
-}
-
-.background {
-  transform: translateZ(-300px) scale(2);
-  height: 100vh;
-  width: 100%;
-  top: 100vh;
-  position: absolute;
-  background: #FF8A8A;
-  padding-top: 100px;
-  
-}
-
-.foreground {
-  position: absolute;
-  height: inherit;
-  width: 100%; 
-  background: #23819C;
-  opacity: 0.8;
-  padding-top: 100px;
+.film {
+	position: relative;
+	z-index: 3;
+	height: inherit;
+	width: inherit;
+	background: #F2F2F2;
+	opacity: 0.9;
 }
 
 
 
 
 
-.debug {
-  position: fixed;
-  top: 0;
-  left: .5em;
-  z-index: 999;
-  background: rgba(0,0,0,.85);
-  color: #fff;
-  padding: .5em;
-  border-radius: 0 0 5px 5px;
-}
-.debug-on .group {
-  -webkit-transform: translate3d(800px, 0, -800px) rotateY(30deg);
-  transform: translate3d(700px, 0, -800px) rotateY(30deg);
-}
-.debug-on .foreground .background {
-  box-shadow: 0 0 0 2px #000;
-  opacity: 0.9;
-}
-.group {
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-}
+
+
 
 
 

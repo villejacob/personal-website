@@ -3,35 +3,17 @@
 <head>
 	<title>Jacob Ville</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<script
-	  src="https://code.jquery.com/jquery-3.1.1.min.js"
-	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-	  crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-	<div class="debug">
-		<label><input type="checkbox"> Debug</label>
-	</div>
-	<div class="container">
-		<div class="landing group">
-			<div class="foreground">
-				<center>landing fore</center>
-			</div>
-			<div class="background">
-				<center>landing back</center>
-			</div>
+	<section class="landing">
+		<div class="bg-holder">
+			<div class="logo-container"></div>
 		</div>
-	</div>
-	<script>
-	var debugInput = document.querySelector("input");
-	function updateDebugState() {
-		document.body.classList.toggle('debug-on', debugInput.checked);
-	}
-	debugInput.addEventListener("click", updateDebugState);
-	updateDebugState();
-	$(window).scroll(function(){
-	    $(".foreground").css("bottom", Math.max(0, 250 + $(this).scrollTop()));
-	});
-	</script>
+	</section>
+	<section class="about">
+		<div class="film"></div>
+	</section>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
