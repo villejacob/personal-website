@@ -48,11 +48,10 @@ html, body {
 
 .film {
 	position: relative;
-	z-index: 3;
+	z-index: 4;
 	height: inherit;
 	width: inherit;
 	background: #F2F2F2;
-	opacity: 0.9;
 }
 
 
