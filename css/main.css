@@ -5,15 +5,13 @@ html, body {
 	overflow-x: hidden;
 	overflow-y: auto; 
 	background: #F2F2F2;
+	font-family: "Lato";
+	font-weight: 100;
+	font-style: normal;
+	font-size: 36px;
+	line-height: 30px;
+	color: #F2F2F2;
 }
-
-/*.landing {
-	background: #F2F2F2;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}*/
 
 .landing {
 	position: relative;
@@ -37,6 +35,10 @@ html, body {
 	min-width: 360px;
 	margin: 40vh auto;
 	background: url(../images/name-logo.png) center / contain no-repeat;
+	animation-name: slide-on-load;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+	animation-duration: 2s;
 }
 
 .about {
@@ -46,12 +48,57 @@ html, body {
 	background: url(../images/black-beach.jpg) center top / cover no-repeat;
 }
 
-.film {
-	position: relative;
-	z-index: 4;
-	height: inherit;
-	width: inherit;
-	background: #F2F2F2;
+.about .description {
+	float: left;
+	width: 60vw;
+	height: 60vh;
+	margin: 20vh auto;
+}
+
+.description .bio {
+	margin-left: 10vw;
+	margin-right: 5vw;
+	font-size: 0.8em;
+}
+
+.description .bio span {
+	font-size: 0.8em;
+}
+
+
+
+.about .links {
+	float: right;
+	width: 40vw;
+	height: 60vh;
+	margin: 20vh auto;
+}
+
+.links a {
+	float: left;
+	clear: left;
+	font-size: 0.8em;
+	margin: 1em 10vw;
+}
+
+/* unvisited link */
+.links a:link {
+	color: white;
+	text-decoration: underline;
+}
+
+/* once visited */
+.links a:visited {
+	color: #F2F2F2;
+}
+
+.links a:hover {
+	color: black;
+}
+
+@keyframes slide-on-load{
+    from { transform: translateX(-30%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
 }
 
 
