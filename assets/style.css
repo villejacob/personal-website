@@ -1,0 +1,92 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+img {
+  position: absolute;
+}
+
+#name {
+  width: 167px;
+  height: 44.2px;
+  top: 100px;
+  left: 350px;
+  z-index: 2;
+  animation: name 12s linear infinite;
+}
+
+#_ille, #ville {
+  width: 290px;
+  height: 114px;
+  top: 138px;
+  left: 601px;
+  z-index: 2;
+}
+
+#ville { display: none; }
+
+#v {
+  width: 146px;
+  height: 131px;
+  top: 177px;
+  left: 560px;
+  z-index: 1;
+}
+
+#blk {
+  width: 400px;
+  height: 275px;
+  top: 52px;
+  left: 263px;
+  z-index: 0;
+}
+
+#canary {
+  position: absolute;
+  width: 400px;
+  height: 275px;
+  top: 50px;
+  left: 250px;
+  z-index: -1;
+  background: #FFFF9B;
+}
+
+.links {
+  position: absolute;
+  top: 441px;
+  left: 339px;
+}
+
+.links a {
+  display: table;
+  font-size: 30px;
+  text-decoration: none;
+  color: #000;
+}
+
+.links a:hover {
+  cursor: none;
+  color: #FFF !important;
+  background-color: #000;
+}
+
+.about {
+  display: none;
+  position: absolute;
+  top: 373px;
+  left: 381px;
+  width: 400px;
+  text-align: right;
+}
+
+.about p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+@keyframes name {
+  to { top: 140px; left: 360px; }
+}
+
